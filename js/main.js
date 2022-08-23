@@ -9,14 +9,6 @@ function display(list){
   nameUl.innerHTML = '';
     for(let i =0 ; i<list.length ; i++){
         const playerName = list[i];
-       // console.log(playerName);
-
-
-        // if(total-number == 5){
-        //     alert("Stop to Add Plear");
-        //     return;
-        // }
-      
 
         const li = document.createElement('li');
 
@@ -26,7 +18,6 @@ function display(list){
         `;
         nameUl.appendChild(li);
 
-       // console.log(nameUl);
     }
 }
   let totalNumber= 0;
@@ -86,7 +77,7 @@ function display(list){
     });
 
     // working with calculation Total Price
-  document.getElementById('btn-Total-cal').addEventListener('click',function(){
+    document.getElementById('btn-Total-cal').addEventListener('click',function(){
     const managerInput = document.getElementById('manager_input');
     const managerInputValue = managerInput.value;
     const manager_inputString = parseFloat(managerInputValue);
@@ -97,28 +88,25 @@ function display(list){
     const coach_inputValue = coach_input.value;
     const coach_inputString = parseFloat(coach_inputValue);
 
-   // alert(coach_inputString);
 
 
-   managerInput.value = '';
-   coach_input.value = '';
-   if(isNaN(manager_inputString)){
-     alert("Please Provide a number");
-     return;
-   }
+    //input value empty
+    managerInput.value = '';
+    coach_input.value = '';
+    if(isNaN(manager_inputString)){
+        alert("Please Provide a number");
+        return;
+    }
 
+    //get player Expenses amount
     const currentPlayerExpensiveTotal = document.getElementById('showPlayerAmount').innerText;
     const currentPlayerExpensiveTotalString  = parseFloat(currentPlayerExpensiveTotal);
-   // alert(currentPlayerExpensiveTotalString);
-    
-    const totalPrice = document.getElementById('total_price');
 
+    
+    //set total price 
+    const totalPrice = document.getElementById('total_price');
     const currentTotal = manager_inputString + coach_inputString + currentPlayerExpensiveTotalString;
-   // alert(currentTotal)
     totalPrice.innerText = currentTotal;
 
-   
-
-    
 
   })
