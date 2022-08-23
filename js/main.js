@@ -37,7 +37,7 @@ function display(list){
 
       } else {
         
-        alert("can't add player more then 5");
+        alert("can't add players more then 5");
         return;
       }
 
