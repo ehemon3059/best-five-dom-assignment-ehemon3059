@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lemon&family=Righteous&display=swap');
+body{
+    margin: 0 auto;
+    background-color: rgb(39, 39, 39);
+}
+.container-header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 430px;
+    width: auto;
+
+}
+.left-side img{
+width: 100%;
+} 
+.middle-text{
+    text-align: center;
+    color: white;
+
+}
+.middle-text h1{
+    margin-top: 50px;
+    font-family: 'Lemon', cursive;
+    font-size: 4.1vw;
+    color: #fc612e;
+    text-align: center;
+  
+}
+.right-side img{
+    width: 400px;
+    height: auto;
+    text-align: center;
+ 
+}
+.middle-text p{
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 15px;
+    
+}
+.left-side img{
+    width: 500px;
+    height: auto;
+    text-align: center;
+    margin-top: 17%;
+}
+
+.contsiner-main{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(145, 145, 145);
+ 
+}
+.all-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.my-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    Width:264px;
+    Height:371px;
+    color: white;
+    border: 2px solid #656565ea;
+  
+    background-color: black;
+}
+.my-card img{
+  
+    width: 100%;
+}
+.content{
+    padding: 10px;
+}
+
+.btn-player{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: rgb(39, 39, 128);
+    color: white;
+
+   
+}
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+.amount-control h3{
+    margin-top: 20px;
+}
+.player-total-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.other-amount-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.other-amount-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#btn-cal{
+    margin-top: 15px;
+    width: 221px;
+    height: 42px;
+    background-color: #015196;
+    color: white;
+}
+
+.left-part{
+    flex: 70%;
+}
+.right-part{
+    flex: 15%;
+}
+.selected-players{
+padding: 10px;
+height: 371px;
+width: 264px;
+background-color: black;
+
+}
+#player_list_box{
+    display: flex;
+
+}
+.amount-control{
+    margin-top: 18px;
+    padding: 10px;
+    width: 264px;
+    height: 514px;
+    background-color: black;
+}
+
+
+/* .per-player-amount{
+  width: 121px;
+  height: 42px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+} */
+.controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+#btn-Total-cal{
+    margin-top: 15px;
+    width: 221px;
+    height: 42px;
+    background-color: #015196;
+    color: white;
+}
