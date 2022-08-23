@@ -52,3 +52,35 @@ function display(list){
 
           
   }
+
+  //working with Budget section 
+  document.getElementById('btn-cal').addEventListener('click',function(){
+
+
+    const perPlayerInputValue = document.getElementById('perPlayerAmount');
+    const perPlayerInputValueString = perPlayerInputValue.value;
+    const newPlayerInputValue = parseFloat(perPlayerInputValueString);
+   
+  
+    perPlayerInputValue.value = '';
+    
+        if(isNaN(newPlayerInputValue)){
+          alert("Please Provide a number");
+          return;
+        }
+  
+        const playerExpnsive = document.getElementById('showPlayerAmount');
+        const playerExpnsiveString = playerExpnsive.innerText;
+      
+  
+      
+        const totalNN = document.getElementById('total-number').innerText;
+        const totalNNString  = parseFloat(totalNN);
+     
+  
+        const currentPlayerExpensive = totalNNString * newPlayerInputValue;
+        playerExpnsive.innerText = currentPlayerExpensive;
+  
+       
+  
+    });
